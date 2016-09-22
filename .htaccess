@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# Redirect non-www urls to www
+RewriteEngine on
+
+RewriteRule ^country/([A-Za-z0-9-_]+)/?$ app.php?controller=showData&action=process&country=$1 [NC,L]
+RewriteRule ^country/?$ app.php?controller=showData&action=process [NC,L]
